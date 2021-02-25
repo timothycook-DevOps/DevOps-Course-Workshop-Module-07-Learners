@@ -47,12 +47,3 @@ jobs:
     # runs-on: ubuntu-latest      # Sets the build environment a machine with the latest Ubuntu installed
     # steps:
     # - uses: actions/checkout@v2 # Adds a step to checkout the repository code
-
-    steps:
-  - uses: 8398a7/action-slack@v3
-    with:
-      status: ${{ job.status }}
-      fields: repo,message,commit,author,action,eventName,ref,workflow,job,took # selectable (default: repo,message)
-    env:
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # required
-    if: always() # Pick up events even if the job fails or is canceled.
