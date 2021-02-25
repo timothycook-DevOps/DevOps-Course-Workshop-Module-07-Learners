@@ -21,13 +21,13 @@ jobs:
     - run: dotnet build # <my project>
     - run: dotnet test
     - run: npm install
-      working-directory: ./DotNetTemplate.Web
+      working-directory: ./DotnetTemplate.Web
     - run: npm run build
-      working-directory: ./DotNetTemplate.Web
+      working-directory: ./DotnetTemplate.Web
     - run: npm t
-      working-directory: ./DotNetTemplate.Web
+      working-directory: ./DotnetTemplate.Web
 
-      
+
       # jobs:
   # build:
     # name: Build and test
