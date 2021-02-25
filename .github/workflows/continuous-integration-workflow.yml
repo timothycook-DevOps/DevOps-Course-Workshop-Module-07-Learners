@@ -26,7 +26,8 @@ jobs:
       working-directory: ./DotnetTemplate.Web
     - run: npm t
       working-directory: ./DotnetTemplate.Web
-
+    - run: npm run lint
+      working-directory: ./DotnetTemplate.Web
 
       # jobs:
   # build:
