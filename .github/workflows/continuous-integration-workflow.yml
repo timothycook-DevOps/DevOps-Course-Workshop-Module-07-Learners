@@ -26,7 +26,7 @@ jobs:
       working-directory: ./DotnetTemplate.Web
     - run: npm t
       working-directory: ./DotnetTemplate.Web
-    - run: npm run lint
+    - run: npm run lin
       working-directory: ./DotnetTemplate.Web
     - name: Slack Notification
       # uses: rtCamp/action-slack-notify@v2
